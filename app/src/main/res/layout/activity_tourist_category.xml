@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".touristCategory">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchEngine"
+            android:layout_width="match_parent"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlList"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="-1dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/linearlList"
+        android:layout_marginTop="-1dp"
+        android:background="@color/lightgreen"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/categoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Tourist Category"
+            android:textColor="@color/black"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/lightgreen"/>
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:padding="0dp"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/darkgreengray"/>
+
+        <Button
+            android:id="@+id/multilingialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Translation"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/lightgreen"/>
+    </LinearLayout>
+</RelativeLayout>
